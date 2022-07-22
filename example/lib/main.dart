@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData.light(),
         scrollBehavior: ScrollBehavior().copyWith(
           dragDevices: {
-            PointerDeviceKind.trackpad,
+            //PointerDeviceKind.trackpad,
             PointerDeviceKind.mouse,
             PointerDeviceKind.touch,
           },
