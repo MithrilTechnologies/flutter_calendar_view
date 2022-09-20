@@ -157,7 +157,7 @@ class DefaultTimeLineMark extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(right: 7.0),
         child: Text(
-          "${((date.hour - 1) % 12) + 1} ${date.hour ~/ 12 == 0 ? "am" : "pm"}",
+          date.hour.toString().padLeft(2, '0'),
           textAlign: TextAlign.right,
           style: markingStyle ??
               TextStyle(
