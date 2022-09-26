@@ -42,7 +42,7 @@ class HourLinePainter extends CustomPainter {
       ..color = lineColor
       ..strokeWidth = lineHeight;
 
-    for (var i = 1; i < Constants.hoursADay; i++) {
+    for (var i = 0; i < Constants.hoursADay; i++) {
       final dy = i * minuteHeight * 60;
       canvas.drawLine(Offset(offset, dy), Offset(size.width, dy), paint);
     }
